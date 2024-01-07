@@ -1,0 +1,368 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.rcno-recent-review {
+    margin: 0 0 20px 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+}
+
+.rcno-recent-review h3 {
+    font-size: 14px !important;
+    text-transform: uppercase;
+    margin: 0 !important;
+    font-weight: 600;
+}
+
+.rcno-recent-review .widget-book-details {
+    float: right;
+    width: 70%;
+    flex: 1 1 70%;
+}
+
+.rcno-recent-review .widget-book-details p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.rcno-recent-review .widget-book-cover {
+    width: 25%;
+    display: inline-block;
+    position: relative;
+    margin: 0 10px 0 0;
+    flex: 1 1 25%;
+}
+
+.rcno-recent-review .widget-book-cover .rcno-admin-rating {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.rcno-recent-review .widget-book-cover .rcno-admin-rating .jq-star {
+    width: 0.8em;
+}
+
+.rcno-recent-review .widget-book-cover .rcno-admin-rating span {
+    font-size: 1em;
+    line-height: 1;
+}
+
+.rcno-recent-review .widget-book-details p {
+    line-height: 1.2 !important;
+}
+
+.rcno-book-slides img {
+    width: 100%;
+}
+
+.rcno-book-slider-container {
+    width: 325px;
+    position: relative;
+}
+
+.rcno-book-slider-container .owl-stage .owl-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owl-stage .owl-item .rcno-admin-rating {
+    position: absolute;
+    bottom: 0;
+}
+
+.rcno-book-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rcno-book-grid-container .book-grid-item {
+    flex-basis: 85px;
+    margin: 2px;
+    height: 125px;
+    overflow: hidden;
+}
+
+.rcno-currently-reading-widget-fe {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 8px;
+}
+
+.rcno-currently-reading-widget-fe .book-cover {
+    display: inline-block;
+    text-align: center;
+    align-self: start;
+}
+
+.rcno-currently-reading-widget-fe .book-cover span {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.rcno-currently-reading-widget-fe .book-progress {
+     width: 100%;
+}
+
+.rcno-currently-reading-widget-fe .book-progress h3,
+.rcno-currently-reading-widget-fe .book-progress p {
+    margin: 0 0 5px 0;
+    line-height: 1.3;
+}
+
+.rcno-currently-reading-widget-fe .book-progress p {
+    font-size: .9em;
+}
+
+.rcno-currently-reading-widget-fe .book-cover .progress-bar-container {
+    height: 100%;
+    position: relative;
+}
+
+.rcno-currently-reading-widget-fe .book-cover .progress-bar {
+    background: #10a4ff;
+    height: 6px;
+    position: absolute;
+    bottom: 0;
+}
+
+.book-progress-btn {
+    text-align: right;
+}
+
+.rcno-review-coming-soon p {
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid;
+    padding: 5px;
+}
+
+.rcno-book-grid-index-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rcno-book-grid-item {
+    position: relative;
+    flex: 0 1 23%;
+    margin: 0 10px 10px 0;
+    min-width: 170px;
+}
+
+.rcno-book-grid-item p {
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.rcno-book-grid-item img {
+    width: 100%;
+    margin: 0;
+}
+
+.rcno-tax-container .rcno-tax-wrapper {
+    margin: 0 0 2em 0;
+}
+
+.rcno-tax-container .rcno-tax-name {
+    margin: 0 0 2em 0;
+}
+
+.rcno-tax-container .rcno-tax-name > a {
+    display: block;
+    box-shadow: none;
+    border-bottom: 1px solid;
+    margin: 0 0 10px 0;
+}
+
+.rcno-tax-container .rcno-tax-name .books-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.rcno-tax-container .rcno-tax-name .books-container .book-cover-container {
+    flex: 0 1 85px;
+    margin: 0 10px 10px 0;
+}
+
+.rcno-tax-container .rcno-tax-name .titles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.rcno-tax-container .rcno-tax-name .titles-container .book-title-container {
+    flex: 0 1 30%;
+    margin: 0 10px 0 0;
+    width: 35%;
+}
+
+.rcno-tax-container .rcno-tax-name .titles-container .book-title-container .rcno_book_title {
+    margin: 0 !important;
+}
+
+.rcno-book-series-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.rcno-book-series-wrapper .rcno-book-series-book {
+    position: relative;
+    width: 85px;
+    margin: 0 10px 10px 0;
+}
+
+.rcno-book-series-container h5 {
+    margin: 0 0 10px 0 !important;
+}
+
+.rcno-book-series-container .rcno-book-series-book .rcno_book_series_number {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1.5em;
+    height: 1.5em;
+    color: white;
+    background: #10a4ff;
+    line-height: 1;
+    padding: .2em 0 0 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+.rcno-books-error {
+    padding: 1em;
+    background: rgba(244, 67, 54, 0.86);
+    color: #fff;
+    text-align: center;
+}
+
+.rcno-books-error p {
+    margin: 0;
+}
+
+.jq-stars {
+    display: inline-block;
+}
+
+.jq-rating-label {
+    font-size: 22px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    font-family: Helvetica, arial, verdana, sans-serif;
+}
+
+.jq-star {
+    display: inline-block;
+}
+
+.jq-star-svg {
+    padding-left: 3px;
+    width: 100%;
+    height: 100% ;
+}
+
+.jq-star:hover .fs-star-svg path {
+}
+
+.jq-star-svg path {
+    /* stroke: #000; */
+    stroke-linejoin: round;
+}
+
+.rcno-isotope-grid-search {
+    width: 12em;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.rcno-isotope-grid-item {
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+}
+
+.rcno-isotope-grid-item p {
+    display: none;
+}
+
+.rcno-isotope-grid-select-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 0 2em 0;
+}
+
+.rcno-isotope-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.rcno-isotope-grid-select-wrapper {
+    flex: 1 0 auto;
+    margin: 0 10px 10px 0;
+}
+
+
+select.rcno-isotope-grid-select {
+    font-size: 14px;
+    padding: 5px;
+    width: 100%;
+}
+
+.rcno-isotope-grid-select.reset {
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.rcno-isotope-grid-item .rcno-admin-rating {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.rcno-isotope-grid-item .rcno-admin-rating .stars {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rcno-isotope-grid-item .rcno-admin-rating .jq-star {
+    width: 1em;
+}
+
+/*
+     FILE ARCHIVED ON 19:34:22 Jan 10, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:15:17 Oct 02, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 99.601
+  exclusion.robots: 0.114
+  exclusion.robots.policy: 0.101
+  cdx.remote: 0.084
+  esindex: 0.012
+  LoadShardBlock: 61.008 (3)
+  PetaboxLoader3.datanode: 63.436 (4)
+  load_resource: 41.025
+  PetaboxLoader3.resolve: 22.145
+*/

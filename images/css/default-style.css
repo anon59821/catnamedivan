@@ -1,0 +1,375 @@
+#rcno-review-score-box * {
+    box-sizing: border-box;
+}
+
+.rcno-full-book-description::-webkit-scrollbar {
+    width: .5em;
+}
+
+.rcno-full-book-description::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.rcno-full-book-description::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+#rcno-review-score-box {
+    padding: 10px;
+}
+
+#rcno-review-score-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    clear: right;
+}
+
+#rcno-review-score-box .review-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 0 0 5px 0;
+}
+
+#rcno-review-score-box .review-summary .overall-score,
+.rcno-review-badge {
+    width: 120px;
+    height: 120px;
+    background: green;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 0 10px 10px 0;
+    flex: 1 1 auto;
+}
+
+#rcno-review-score-box .review-summary .review-text h2 {
+    margin: 0 0 10px 0;
+}
+
+#rcno-review-score-box .review-summary .review-text {
+    display: inline-block;
+    flex: 1 1 75%;
+}
+
+#rcno-review-score-box .review-summary .review-text p {
+    line-height: 1.2;
+    height: 4.8em;
+    overflow: hidden;
+    margin: 0;
+}
+
+#rcno-review-score-box ul li .rcno-review-score-bar-container {
+    height: 40px;
+    background: #ccc;
+    overflow: hidden;
+    margin: 0 0 1em 0;
+    position: relative;
+}
+
+#rcno-review-score-box ul li .review-score-bar {
+    background: green;
+}
+
+#rcno-review-score-box ul li .review-score-bar span.score-bar {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 0 0 10px;
+    text-transform: uppercase;
+}
+
+#rcno-review-score-box ul li .rcno-review-score-bar-container span.right {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 9999;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+#rcno-review-score-box span.badge-star {
+    color: #FFC107;
+}
+
+.rcno-review-badge {
+    padding: 5px 5px 0 5px;
+}
+
+#rcno-review-score-box .review-summary .overall-score .overall,
+.rcno-review-badge .score {
+    color: #fff;
+    font-size: 3.5em;
+    font-weight: 800;
+    display: block;
+    line-height: 1;
+    padding: 10px;
+}
+
+.rcno-review-badge p {
+    font-size: 11px;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    background-color: #000;
+    padding: 6px 0;
+    text-align: center;
+    line-height: 1;
+}
+
+#rcno-review-score-box .review-summary .overall-score .overall-text {
+    color: #fff;
+    font-size: 13px;
+    display: block;
+    line-height: 1;
+    bottom: 0;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 10px 7px;
+    background: black;
+    left: 0;
+    width: 100%;
+}
+
+#rcno-review-score-box .review-summary .overall-text {
+    padding: 5px;
+    display: inline-block;
+}
+
+.rcno-full-book {
+    margin: 0 0 1em 0;
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-column-gap: 10px;
+}
+
+.rcno-full-book:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.rcno-full-book .rcno-full-book-cover img.rcno-book-cover {
+    width: 100%;
+    /* Twenty Ten does not do this for some strange reason */
+    height: auto;
+    display: block;
+}
+
+.rcno-full-book-cover {
+    background: rgba(96, 125, 139, 0.36);
+    position: relative;
+    align-self: start;
+}
+
+.rcno-full-book-details .rcno-full-book-cover img {
+    max-width: 200px;
+}
+
+.rcno-full-book-details {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+}
+
+.rcno-full-book-description {
+    font-size: .9rem;
+    line-height: 1.5;
+    clear: left;
+    display: inline-block;
+    height: 13.5em;
+    overflow: auto;
+}
+
+.rcno-admin-rating span {
+    color: gold;
+    position: relative;
+    font-size: 35px;
+}
+
+.rcno-full-book-cover .rcno-admin-rating {
+    background: rgba(78, 78, 78, 0.50);
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    position: absolute;
+    bottom: 0;
+}
+
+.rcno-full-book-cover .rcno-admin-rating .jq-star {
+    height: 35px;
+    width: 25px;
+    margin: 0 5px 0 0;
+}
+
+.rcno-purchase-links-container {
+    margin: 0 0 1em 0;
+    text-align: right;
+}
+
+.rcno-purchase-links-container a {
+    padding: 2px 10px;
+    display: inline-block;
+    margin: 0 0 5px 0;
+}
+
+ul.rcno-alphabet-navigation {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul.rcno-alphabet-navigation li {
+    flex: 0 1 20px;
+    list-style: none !important;
+}
+
+ul.rcno-taxlist li {
+    margin: 0 0 0 2em;
+}
+
+#rcno-score-box {
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#rcno-score-box .review-summary {
+    width: 120px;
+    display: inline-block;
+    border-radius: 3px;
+    margin: 0 10px 0 0;
+}
+
+#rcno-score-box .review-summary .overall-score, .rcno-review-badge {
+    width: 120px;
+    height: 120px;
+    background: green;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    /* margin: 0 1em 0 0; */
+}
+
+#rcno-score-box .review-summary .overall-score .overall, .rcno-review-badge .score {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 800;
+    display: block;
+    line-height: 1;
+    padding: 10px;
+}
+
+#rcno-score-box span.badge-star {
+    color: #FFC107;
+}
+
+#rcno-score-box .review-summary .overall-score .overall-text {
+    color: #fff;
+    font-size: 13px;
+    display: block;
+    line-height: 1;
+    bottom: 0;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 10px 7px;
+    background: black;
+    left: 0;
+    width: 100%;
+}
+
+#rcno-score-box ul {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 130px);
+    display: inline-block;
+    float: right;
+}
+
+#rcno-score-box ul li .rcno-score-bar-container {
+    background: #ccc;
+    overflow: hidden;
+    margin: 0 0 5px 0;
+    position: relative;
+    border-radius: 3px;
+}
+
+#rcno-score-box ul li .review-score-bar {
+    background: #FF9800;
+}
+
+#rcno-score-box ul li .review-score-bar span.score-bar {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+    padding: 0 0 0 10px;
+    text-transform: uppercase;
+}
+
+#rcno-score-box ul li .rcno-score-bar-container span.right {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+#rcno-score-box span.badge-star {
+    color: #FFC107;
+}
+
+@media (max-device-width: 640px) {
+
+    .rcno-full-book {
+        grid-template-columns: 200px auto;
+    }
+}
+
+@media (max-device-width: 480px) {
+
+    .rcno-full-book {
+        grid-template-columns: 1fr;
+    }
+
+    #rcno-review-score-box .review-summary .overall-score {
+        margin-right: 0;
+    }
+
+}
+
+/*
+     FILE ARCHIVED ON 19:34:25 Jan 10, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:15:17 Oct 02, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 94.192
+  exclusion.robots: 0.076
+  exclusion.robots.policy: 0.067
+  cdx.remote: 0.057
+  esindex: 0.008
+  LoadShardBlock: 58.192 (3)
+  PetaboxLoader3.datanode: 92.649 (4)
+  load_resource: 153.761
+  PetaboxLoader3.resolve: 116.279
+*/
