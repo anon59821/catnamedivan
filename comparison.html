@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Session Messenger Comparison </title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+
+a:link {
+  color: #07f282;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #07f282;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+@font-face {
+ font-family: "Fabryka";
+ src:url(font.ttf);
+}
+
+div {
+  font-family: Fabryka;
+  color:white;
+  max-width: 85%;
+  height: auto;
+}
+
+
+ .modal {
+      position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 600px;
+   height: 400px;
+   background-color: white;
+   padding: 10px;
+   border: 1px solid black;
+   box-shadow: 10px 10px 5px #888888;
+   display: none;
+      }
+
+      h2,
+
+
+      h3 {
+        font-weight: 400;
+        font-family: Fabryka;
+        color: #000000;
+        font-size:30px;
+      }
+
+      span {
+        color: #666;
+        display: block;
+        padding: 0 0 5px;
+      }
+
+
+
+      button.button {
+        background: none;
+        border-top: none;
+        outline: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+        padding: 0 0 0px 0;
+        font-size: 27px;
+        cursor: pointer;
+        font-family: Fabryka;
+        color: #F20730;
+      }
+      button.button:hover {
+        border-bottom: #a99567 1px solid;
+        color: #E8c0bf;
+      }
+
+      .close {
+      background: none;
+        border-top: none;
+        outline: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+        font-size: 27px;
+        cursor: pointer;
+        font-family: Fabryka;
+        color: #000000;
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+</style>
+</head>
+
+<body style="background-color:#000000;">
+<center>
+
+<div><p style="font-size:50px;">Безопасность Session</p></div>
+
+<div><p style="font-size:30px;">
+Session messenger значительно приватнее, конфиденциальнее, анонимнее и безопаснее любого другого мессенджера.
+
+Разговоры в Session шифруются сквозным (end-to-end) шифрованием (как и в большинстве приватных мессенджеров). Однако, когда вы используете Session, личности общающихся тоже защищены.
+<br><br>
+Главное его преимущество — криптоанархичность. Ваши сообщения отправляются адресатам через <b>децентрализованную</b> сеть луковой маршрутизации, похожую на Tor (с некоторыми ключевыми отличиями, подробнее  <a href="https://getsession.org/faq#onion-routing">здесь</a>). Даже разработчики не могут знать, что и кому вы пишете, и не способны выдать эту информацию за деньги, под угрозой тюрьмы или пыток. Также как и в Тор, собеседник не способен вычислить ваш IP или другие данные.
+<br><br>
+Вторая важная его особенность в том, что он <a href="http://www.catnamedivan.online/images/co_img1.html">не собирает</a> <b>никаких</b> данных о вас. Это важно, потому что данные о пользователях могут быть дорого проданы, а также получены взломщиками или затребованы государством. Даже Protonmail по требованию закона начал собирать и передавать судам <a href="https://xakep.ru/2021/09/08/protonfail/">IP-адреса и другие личные данные пользователей</a>, но Session принципиально не может этого сделать.
+<br><br>
+Session имеет <i>полностью</i> <a href="https://github.com/oxen-io">открытый исходный код (FOSS)</a>. Он также прошёл аудит информационной безопасности от Quarkslab, результаты которого можно найти <a href="https://blog.quarkslab.com/resources/2021-05-04_audit-of-session-secure-messaging-application/20-08-Oxen-REP-v1.4.pdf">здесь</a>.
+<br><br>
+Фундамент Session основан на мощном мессенджере Signal:
+<br>фактически, Session — это "Signal Premium".
+<br><br>
+Читай также: <br>
+<button class="button" data-modal="modalvk">Критика ВК</button>   /   <button class="button" data-modal="modaltg">Критика Telegram</button>   /   <a href="https://itsgoingdown.org/the-guide-to-peer-to-peer-encryption-and-tor-new-communication-infrastructure-for-anarchists/" target="_blank" style="color: #F20730;">Критика Signal</a>    /   <a href="https://njump.me/nevent1qqsv6u59tdl9rquvdjg3mtzukv22a60sc9mt3zpt4h2ghsmgyqqaaggzypwg54m9s2u2hgme8u4tche22tqnyk5spg9ff0s0rj7vwr60chk7u4slt5y" target="_blank" style="color: #F20730;">Сравнение с SimpleXChat</a> 
+<br><br>
+</p></div>
+
+
+<div id="modalvk" class="modal">
+
+         <center> 
+  	<h3>
+
+Политика безопасности ВК отвратительна. Администрация ВК не скрывает того, <a href="https://web.archive.org/web/20180906053234/https://www.novayagazeta.ru/articles/2013/03/27/54100-rukovodstvo-171-vkontakte-187-171-my-uzhe-neskolko-let-sotrudnichaem-s-fsb-i-otdelom-171-k-187-mvd-operativno-vydavaya-informatsiyu-o-tysyachah-polzovateley-nashey-seti-187">что передаёт данные пользователей ФСБ и МВД</a>, а согласно правилам ВК, наши данные передаются незнакомцам даже не ради соблюдения закона, но и просто <a href="https://vk.com/terms">"в интересах третьих лиц"</a> (пункт 5.8). Только во Вконтакте возбуждают <a href="https://meduza.io/feature/2016/07/05/vkontakte-so-sledovatelyami">уголовные дела за репосты</a>.<br><br><a class="closea" data-modal="modalvk" style="cursor: pointer"><font color="black">[Закрыть это окно]</font></a>
+
+	</h3>
+ 	</center>
+    </div>    
+
+<div id="modaltg" class="modal" style="height: 640px;">
+<div class="modal-content">
+        <center> 
+  	<h3 style="font-size:25px;">
+
+Телеграм далек от идеала. Есть подтвержденные случаи <a href="https://novayagazeta.ru/articles/2021/09/17/my-schitaem-etu-praktiku-legitimnoi-pavel-durov-obiavil-o-blokirovke-bota-umnogo-golosovaniia-v-telegrame-obiasniv-eto-dniami-tishiny-news">сотрудничества Телеграма с государством РФ</a> и <a href="https://www.spiegel.de/netzwelt/apps/telegram-gibt-nutzerdaten-an-das-bundeskriminalamt-a-0e4d3fcb-8081-4b87-b062-db412bbc294b">другими государствами</a>, и подозрения, что Телеграм даже более тесно сотрудничает с ФСБ. Изначальные обещания Телеграма навсегда остаться бесплатным и безрекламным <a href="http://www.catnamedivan.online/images/telega.html">нарушены</a>. Телеграм обязывает вас регистрироваться <a href="http://www.catnamedivan.online/images/co_img3.html">с номером телефона</a>, не имеет конечного шифрования <a href="comparison.html">включенным по умолчанию</a> (а группы <a href="https://www.kaspersky.com/blog/telegram-privacy-security/38444/">вообще никак не шифрует</a>), не маскирует <a href="https://techcrunch.com/2023/10/19/telegram-is-still-leaking-user-ip-addresses-to-contacts/?guccounter=2">вашего IP-адреса</a>, собирает <a href="comparison.html">ваши данные</a>, использует закрытый исходный код и так далее — то есть к тому же значительно уступает Session по безопасности. Огромное количество информации о вас можно получить, просто <a href="https://theins.ru/obshestvo/261314">наблюдая за вашим аккаунтом в Телеграм</a>: например, сейчас силовики даже <a href="https://t.me/zakharovchannel/1150">используют Телеграм-боты</a>, чтобы деанонимизировать вас через ваши комментарии!<br><br><a class="closea" data-modal="modalvk" style="cursor: pointer"><font color="black">[Закрыть это окно]</font></a>
+
+	</h3>
+ 	</center>
+    </div>   </div>
+
+
+
+    <script>
+      let modalBtns = [...document.querySelectorAll(".button")];
+      modalBtns.forEach(function (btn) {
+        btn.onclick = function () {
+          let modal = btn.getAttribute("data-modal");
+          document.getElementById(modal).style.display = "block";
+        };
+      });
+      let closeBtns = [...document.querySelectorAll(".closea")];
+      closeBtns.forEach(function (btn) {
+        btn.onclick = function () {
+          let modal = btn.closest(".modal");
+          modal.style.display = "none";
+        };
+      });
+      window.onclick = function (event) {
+        if (event.target.className === "modal") {
+          event.target.style.display = "none";
+        }
+      };
+   
+$('body').click(function (event) 
+{
+   if(!$(event.target).closest('#openModal').length && !$(event.target).is('modaltg')) {
+     $(".modalDialog").hide();
+   }     
+   if(!$(event.target).closest('#openModal').length && !$(event.target).is('modalvk')) {
+     $(".modalDialog").hide();
+   }     
+});
+
+
+</script>
+
+
+<br>
+<picture><img src="images/co_img2.jpg"></picture><br><br>
+<picture><img src="images/co_img4.png"></picture><br><br>
+<picture><img src="images/co_img3.jpg"></picture><br><br>
+<picture><img src="images/co_img1.jpg"></picture><br><br>
+
+
+<div><p style="font-size:30px;">Полномасштабное сравнение множества разных мессенджеров</p></div>
+
+<iframe src="images/compmes.html" height="600px" width="75%"></iframe> 
+<div><p style="font-size:15px;"><a href="images/compmes.html">Открыть в новой вкладке</a> / <a href="https://www.securemessagingapps.com/">Открыть источник</a></p>
+<br>
+<div><p style="font-size:30px;">Ещё одно</p></div>
+
+<iframe src="https://bkil.gitlab.io/secuchart/" height="600px" width="70%"></iframe> 
+<div><p style="font-size:15px;"><a href="https://bkil.gitlab.io/secuchart/">Открыть источник</a></p>
+<br>
+<div><hr></div>
+<p style="font-size:20px;"><a href="http://www.catnamedivan.online/">Главная</a> - <a href="http://www.catnamedivan.online/comparison.html">Сравнение</a> - <a href="http://www.catnamedivan.online/join.html">Присоединиться</a></p>
+
+</div><font color="black"> /raccoon.jpg </font> 
+<br>
+</p></div>
+<div><p style="font-size:20px;"> </p></div>
+</center>
+</body>
+</html>
