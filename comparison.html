@@ -47,7 +47,7 @@ div {
    transform: translate(-50%, -50%);
    width: 600px;
    height: 400px;
-   background-color: white;
+   background-color: #EEEEEE;
    padding: 10px;
    border: 1px solid black;
    box-shadow: 10px 10px 5px #888888;
@@ -110,7 +110,7 @@ img {
 </style>
 </head>
 
-<body style="background-color:#000000;">
+<body style="background-color:#000000;" onload="LoadingForm()">
 <center>
 
 <div><p style="font-size:50px;">Безопасность Session</p></div>
@@ -135,12 +135,12 @@ Session имеет <i>полностью</i> <a href="https://github.com/oxen-io
 </p></div>
 
 
-<div id="modalvk" class="modal">
+<div id="modalvk" class="modal" style="height: 420px;">
 
          <center> 
   	<h3>
 
-Политика безопасности ВК отвратительна. Администрация ВК не скрывает того, <a href="https://web.archive.org/web/20180906053234/https://www.novayagazeta.ru/articles/2013/03/27/54100-rukovodstvo-171-vkontakte-187-171-my-uzhe-neskolko-let-sotrudnichaem-s-fsb-i-otdelom-171-k-187-mvd-operativno-vydavaya-informatsiyu-o-tysyachah-polzovateley-nashey-seti-187">что передаёт данные пользователей ФСБ и МВД</a>, а согласно правилам ВК, наши данные передаются незнакомцам даже не ради соблюдения закона, но и просто <a href="https://vk.com/terms">"в интересах третьих лиц"</a> (пункт 5.8). Только во Вконтакте возбуждают <a href="https://meduza.io/feature/2016/07/05/vkontakte-so-sledovatelyami">уголовные дела за репосты</a>.<br><br><a class="closea" data-modal="modalvk" style="cursor: pointer"><font color="black">[Закрыть это окно]</font></a>
+Политика безопасности ВК отвратительна. Администрация ВК не скрывает того, <a href="https://web.archive.org/web/20180906053234/https://www.novayagazeta.ru/articles/2013/03/27/54100-rukovodstvo-171-vkontakte-187-171-my-uzhe-neskolko-let-sotrudnichaem-s-fsb-i-otdelom-171-k-187-mvd-operativno-vydavaya-informatsiyu-o-tysyachah-polzovateley-nashey-seti-187">что передаёт данные пользователей ФСБ и МВД</a>, а согласно правилам ВК, наши данные передаются незнакомцам даже не ради соблюдения закона, но и просто <a href="https://vk.com/terms">"в интересах третьих лиц"</a> (пункт 5.8). Только во Вконтакте возбуждают <a href="https://meduza.io/feature/2016/07/05/vkontakte-so-sledovatelyami">уголовные дела за репосты</a>.<br><br><a class="closea" data-modal="modalvk" onmouseenter="this.style.color='#616161';" onmouseout="this.style.color='black';" style="cursor: pointer; text-decoration: none;">[Закрыть это окно]</a><br><button onclick="LinkCopyingA()" onmouseenter="this.style.color='#616161';" onmouseout="this.style.color='black';" style="cursor: pointer; font-size: 15px; background: none!important; border: none; padding: 0!important; font-family: Fabryka; text-decoration: none;"><p id="TagLinkA">[Скопировать ссылку на это окно]</p></button>
 
 	</h3>
  	</center>
@@ -151,15 +151,64 @@ Session имеет <i>полностью</i> <a href="https://github.com/oxen-io
         <center> 
   	<h3 style="font-size:25px;">
 
-Телеграм далек от идеала. Есть подтвержденные случаи <a href="https://novayagazeta.ru/articles/2021/09/17/my-schitaem-etu-praktiku-legitimnoi-pavel-durov-obiavil-o-blokirovke-bota-umnogo-golosovaniia-v-telegrame-obiasniv-eto-dniami-tishiny-news">сотрудничества Телеграма с государством РФ</a> и <a href="https://www.spiegel.de/netzwelt/apps/telegram-gibt-nutzerdaten-an-das-bundeskriminalamt-a-0e4d3fcb-8081-4b87-b062-db412bbc294b">другими государствами</a>, и подозрения, что Телеграм даже более тесно сотрудничает с ФСБ. Изначальные обещания Телеграма навсегда остаться бесплатным и безрекламным <a href="http://www.catnamedivan.online/images/telega.html">нарушены</a>. Телеграм обязывает вас регистрироваться <a href="http://www.catnamedivan.online/images/co_img3.html">с номером телефона</a>, не имеет конечного шифрования <a href="comparison.html">включенным по умолчанию</a> (а группы <a href="https://www.kaspersky.com/blog/telegram-privacy-security/38444/">вообще никак не шифрует</a>), не маскирует <a href="https://techcrunch.com/2023/10/19/telegram-is-still-leaking-user-ip-addresses-to-contacts/?guccounter=2">вашего IP-адреса</a>, собирает <a href="comparison.html">ваши данные</a>, использует закрытый исходный код и так далее — то есть к тому же значительно уступает Session по безопасности. Огромное количество информации о вас можно получить, просто <a href="https://theins.ru/obshestvo/261314">наблюдая за вашим аккаунтом в Телеграм</a>: например, сейчас силовики даже <a href="https://t.me/zakharovchannel/1150">используют Телеграм-боты</a>, чтобы деанонимизировать вас через ваши комментарии!<br><br><a class="closea" data-modal="modalvk" style="cursor: pointer"><font color="black">[Закрыть это окно]</font></a>
+Телеграм далек от идеала. Есть подтвержденные случаи <a href="https://novayagazeta.ru/articles/2021/09/17/my-schitaem-etu-praktiku-legitimnoi-pavel-durov-obiavil-o-blokirovke-bota-umnogo-golosovaniia-v-telegrame-obiasniv-eto-dniami-tishiny-news">сотрудничества Телеграма с государством РФ</a> и <a href="https://www.spiegel.de/netzwelt/apps/telegram-gibt-nutzerdaten-an-das-bundeskriminalamt-a-0e4d3fcb-8081-4b87-b062-db412bbc294b">другими государствами</a>, и подозрения, что Телеграм даже более тесно сотрудничает с ФСБ. Изначальные обещания Телеграма навсегда остаться бесплатным и безрекламным <a href="http://www.catnamedivan.online/images/telega.html">нарушены</a>. Телеграм обязывает вас регистрироваться <a href="http://www.catnamedivan.online/images/co_img3.html">с номером телефона</a>, не имеет конечного шифрования <a href="comparison.html">включенным по умолчанию</a> (а группы <a href="https://www.kaspersky.com/blog/telegram-privacy-security/38444/">вообще никак не шифрует</a>), не маскирует <a href="https://techcrunch.com/2023/10/19/telegram-is-still-leaking-user-ip-addresses-to-contacts/?guccounter=2">вашего IP-адреса</a>, собирает <a href="comparison.html">ваши данные</a>, использует закрытый исходный код и так далее — то есть к тому же значительно уступает Session по безопасности. Огромное количество информации о вас можно получить, просто <a href="https://theins.ru/obshestvo/261314">наблюдая за вашим аккаунтом в Телеграм</a>: например, сейчас силовики даже <a href="https://t.me/zakharovchannel/1150">используют Телеграм-боты</a>, чтобы деанонимизировать вас через ваши комментарии!<br><br><a class="closea" data-modal="modalvk" onmouseenter="this.style.color='#616161';" onmouseout="this.style.color='black';" style="cursor: pointer; text-decoration: none;">[Закрыть это окно]</a>
+<br><button onclick="LinkCopyingB()" onmouseenter="this.style.color='#616161';" onmouseout="this.style.color='black';" style="cursor: pointer; font-size: 15px; background: none!important; border: none; padding: 0!important; font-family: Fabryka; text-decoration: none;"><p id="TagLinkB">[Скопировать ссылку на это окно]</p></button>
 
 	</h3>
  	</center>
     </div>   </div>
 
 
-
     <script>
+
+
+
+function LinkCopyingA() {
+  navigator.clipboard.writeText("https://catnamedivan.online/comparison.html#vk");
+  document.getElementById("TagLinkA").innerHTML = "[Готово!]";
+}
+
+function LinkCopyingB() {
+  navigator.clipboard.writeText("https://catnamedivan.online/comparison.html#tg");
+  document.getElementById("TagLinkB").innerHTML = "[Готово!]";
+}
+
+function LoadingForm() {
+
+var hash = window.location.hash;
+
+switch(hash){
+    case '#vk':
+        		let mmodal = "modalvk";
+          		document.getElementById(mmodal).style.display = "block";
+        break;
+}
+
+switch(hash){
+    case '#tg':
+        		let mmodal = "modaltg";
+          		document.getElementById(mmodal).style.display = "block";
+        break;
+}
+
+switch(hash){
+    case '#vkontakte':
+        		let mmodal = "modaltg";
+          		document.getElementById(mmodal).style.display = "block";
+        break;
+}
+
+switch(hash){
+    case '#telegram':
+        		let mmodal = "modaltg";
+          		document.getElementById(mmodal).style.display = "block";
+        break;
+}
+
+
+			}
+
+
       let modalBtns = [...document.querySelectorAll(".button")];
       modalBtns.forEach(function (btn) {
         btn.onclick = function () {
@@ -172,21 +221,35 @@ Session имеет <i>полностью</i> <a href="https://github.com/oxen-io
         btn.onclick = function () {
           let modal = btn.closest(".modal");
           modal.style.display = "none";
+	  document.getElementById("TagLinkB").innerHTML = "[Скопировать ссылку на это окно]";
+          document.getElementById("TagLinkA").innerHTML = "[Скопировать ссылку на это окно]";
         };
       });
+  
+
       window.onclick = function (event) {
         if (event.target.className === "modal") {
           event.target.style.display = "none";
+	  document.getElementById("TagLinkB").innerHTML = "[Скопировать ссылку на это окно]";
+          document.getElementById("TagLinkA").innerHTML = "[Скопировать ссылку на это окно]";
         }
       };
-   
+
+  
+
+
+
 $('body').click(function (event) 
 {
    if(!$(event.target).closest('#openModal').length && !$(event.target).is('modaltg')) {
      $(".modalDialog").hide();
+     document.getElementById("TagLinkB").innerHTML = "[Скопировать ссылку на это окно]";
+     document.getElementById("TagLinkA").innerHTML = "[Скопировать ссылку на это окно]";
    }     
    if(!$(event.target).closest('#openModal').length && !$(event.target).is('modalvk')) {
      $(".modalDialog").hide();
+     document.getElementById("TagLinkB").innerHTML = "[Скопировать ссылку на это окно]";
+     document.getElementById("TagLinkA").innerHTML = "[Скопировать ссылку на это окно]";
    }     
 });
 
